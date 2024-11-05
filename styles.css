@@ -1,7 +1,91 @@
+@font-face {
+    font-family: '3dumbregular';
+    src: url('./assets/fonts/3Dumb-webfont.woff2') format('woff2'),
+         url('./assets/fonts/3Dumb-webfont.woff') format('woff');
+
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 * {
     box-sizing: border-box;
 }
 
 html {
-    margin: 0;
+    font-family: '3dumbregular';
+    
 }
+
+body {
+    background: linear-gradient(#D6FFF3, #CEABB1);
+    height: 100vw;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+   background-color: #CEABB1; 
+   height: 5vh;
+   width: 100%;  
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   position: fixed;
+   padding: 40px;
+
+}
+
+header ul {
+    margin-top: 0;
+    margin-right: 40px;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+
+}
+
+
+nav a {
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+
+#welcome-section {
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcome-container {
+    text-align: center;
+}
+
+#welcome-section h1 {
+    font-size: 3.5rem;
+}
+
+#sub-greeting {
+    font-size: 2rem;
+}
+
+#projects {
+    border: 5px solid green;
+}
+
+#contact {
+    border: 5px solid yellow;
+}
+
+footer {
+    height: 5vh;
+    border: 5px solid red;
+}
+
+
