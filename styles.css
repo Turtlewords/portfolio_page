@@ -5,9 +5,13 @@
 
     font-weight: normal;
     font-style: normal;
-
 }
 
+@media print {
+    body {
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
 
 * {
     box-sizing: border-box;
@@ -20,8 +24,8 @@ html {
 
 body {
     background: linear-gradient(#D6FFF3, #CEABB1);
-    height: 100vw;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     margin: 0;
     padding: 0;
 }
@@ -54,6 +58,9 @@ nav a {
     font-size: 2rem;
 }
 
+nav a:visited {
+    color: green;
+}
 
 #welcome-section {
     height: 100vh;
@@ -76,16 +83,81 @@ nav a {
 }
 
 #projects {
-    border: 5px solid green;
+    margin-top: 10vh;
+    padding: 30px;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 3rem;
+    margin-top: 8vh;
+}
+
+#project-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.project-container {
+    padding: 10px;
+    text-align: center;
+}
+
+.project-img {
+    width: 400px;
+    height: 329.91px;
+    border-radius: 5px;
+    border: 2px solid #444545;
+}
+
+.project-text a{
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.project-text a:visited {
+    color: green;
+}
+
+.project-text a:hover {
+    font-size: 2.2rem;
 }
 
 #contact {
-    border: 5px solid yellow;
+    text-align: center;
+    padding: 200px;
+
+}
+
+#contact h2 {
+    font-size: 3.0rem;
+}
+
+.contact-links {
+    
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+#contact a {
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+#contact a:visited {
+    color: green;
 }
 
 footer {
     height: 5vh;
-    border: 5px solid red;
+    background-color: #D6FFF3;
+    padding: 10px;
+    text-align: end;
+}
+
+footer p {
+    margin-right: 30px;
 }
 
 
